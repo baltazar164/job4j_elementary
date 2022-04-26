@@ -23,7 +23,7 @@ public class SqAreaTest {
         Assert.assertEquals(expected, out, 0.1);
     }
 
-    @Test // (p / (2 * (k + 1)))^2 * k
+    @Test
     public void whenP7K4Square4dot2() {
         double expected = 1.96;
         int p = 7;
