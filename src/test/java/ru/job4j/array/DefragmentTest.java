@@ -46,7 +46,7 @@ public class DefragmentTest {
 
     @Test
     public void speedTest() {
-        int size = 100000;
+        int size = 300000;
         String[] input = new String[size];
         int num = 1;
         for (int i = 0; i < input.length; i++) {
