@@ -47,7 +47,6 @@ public class DefragmentTest {
     @Test
     public void speedTest() {
         int size = 100000;
-
         String[] input = new String[size];
         int num = 1;
         for (int i = 0; i < input.length; i++) {
@@ -56,15 +55,11 @@ public class DefragmentTest {
                 num++;
             }
         }
-
         String[] result = Defragment.compress(input);
-
         String[] expected = new String[size];
         for (int i = 0; i < (expected.length / 2); i++) {
             expected[i] = Integer.toString(i + 1);
         }
-
         Assert.assertArrayEquals(expected, result);
     }
-
 }
